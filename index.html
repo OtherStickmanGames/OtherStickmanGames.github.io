@@ -4,35 +4,45 @@
     <title>Игры от [Ваше имя или название]</title>
     <style>
         body {
-            background-color: #333; /* Темно-серый фон */
-            color: #fff; /* Белый текст */
+            background-color: #1a1a1a; /* Темно-серый фон */
+            color: #ffffff; /* Белый текст */
             font-family: Arial, sans-serif;
             text-align: center;
         }
 
-        .games {
+        .games-container {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-around;
             flex-wrap: wrap;
+            margin: 20px;
         }
 
         .game {
+            flex: 0 1 calc(20% - 20px);
             margin: 20px;
-            text-align: center;
+            background-color: #333; /* Цвет фона блока игры */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .game a {
+            text-decoration: none;
+            color: #ff6600; /* Оранжевый цвет текста для ссылок */
         }
 
         .game img {
             width: 150px;
             height: 150px;
             border: 1px solid #fff; /* Белая рамка для иконок */
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
     <h1>Наши игры</h1>
 
-    <div class="games">
+    <div class="games-container">
         <div class="game">
             <a href="https://play.google.com/store/apps/details?id=com.OtherStickmanGames.NoobOnePunch">
                 <img src="ИКОНКА_ИГРЫ_1.jpg" alt="Noob One Punch">
